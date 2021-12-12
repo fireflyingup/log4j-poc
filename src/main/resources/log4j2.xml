@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <!-- 具体就是%msg后面的{lookups}这个会使后续的代码反射出LookupMessagePatternConverter -->
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg{lookups}%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="error">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
